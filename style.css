@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+
+}
+/* navbar start */
+#navbar{
+background-color: #f9f9f9;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    text-shadow: 0x 1px 1px black;
+    margin-bottom: 5px;
+
+}
+#logo span{
+    color: #ffa500;
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+
+}
+.nav-item .nav-link:hover{
+    background-color: #ffa500;
+    color: white;
+    border: none;
+}
+
+/* navbar end */
+/* home section start  */
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image:  url(./images/madhya-pradesh.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#section {
+    text-align: center;
+    padding-top: 200px;
+
+}
+#section h5{
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+}
+#section h1{
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow:0px 1px 1px black ;
+    margin-top: 5px;
+}
+#section p{
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow:0px 1px 1px black ;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.changecontant::after{
+    content: '';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetxt 15s infinite linear;
+}
+@keyframes changetxt{
+    0%{content: "Ujjain";}
+    10%{content: "Indore";}
+    20%{content: "Bhopal";}
+    30%{content: "Amarkantak";}
+    40%{content: "Omkareshwar ";}
+    50%{content: "Pandav Caves";}
+    60%{content: "Panna ";}
+    70%{content: "Satna";}
+    80%{content: "Gwalior";}
+    90%{content: "Jabalpur";}
+    100%{content: "Pachmarhi";}
+}
+#section a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+/* home section end  */
+/* section book start */
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+    
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.book .card{
+border-radius: 10px;
+box-shadow: 0px 5px 5px -6px black;
+
+}
+
+.book .row{
+    margin-top: 30px;
+}
+
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow:0px 5px 5px -6px black ;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow:0px 5px 5px -6px black ;
+    height: 200px;
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 55o;
+    background: #ffa500;
+    color: white;
+    margin-bottom: 10px;
+    transition: 0.5s;
+
+}
+.book .submit:hover{
+    width: 170px;
+}
+@media(max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        margin-top: 20px;
+    }
+}
+/* section book end */
+
+/* Section package start */
+.maim-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+    color: #ffa500;   
+}
+.package .card{
+    border-radius: 5px;
+    border:none;
+    box-shadow: rgb(0, 0, 0,0.1) 0px 4px 12px;
+}
+.package .card img{
+    border-radius: 5px;
+}
+.package .card .card-body{
+    background: transparent;
+}
+.package .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+
+}
+.package .card .card-body p{
+    font-size: 15px;
+
+}
+/* . i .fill{ */
+    /* color: #ffa500; */
+/* } */
+.star i{
+    font-size: 15px;
+
+}
+.package .card .card-body h6{
+    font-size: 20px;
+    
+}
+.package .card .card-body a {
+    padding: 10px;
+    text-decoration: none;
+    background: #ffa500;
+    color:white;
+    border-radius: 5px;
+}
+
+/* package end */
+/* section services start */
+.services{
+    background: #f9f9f9;
+    margin-top: 50px;
+
+}
+.services .card{
+    box-shadow: 0px 5px 5px -6px black;
+    border: none;
+    cursor: pointer;
+    
+}
+.services .card svg{
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body{
+    text-align: center;
+}
+/* section services end */
+/* section Gallary start  */
+.gallary{
+    margin-top: 50p;
+    text-align: center;
+
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1)0px 4px 12px ;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+.gallary .card img:hover {
+transform: scale(1.1);
+}
+/* section Gallary end  */
+
+/* section About start */
+.About{
+    padding: 50px;
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+.About .card{
+    border-radius: 10px;
+
+}
+.About .card img{
+    border-radius: 10px;
+}
+.About h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.About p{
+    font-weight: 500;
+}
+#About-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #ffa500;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+
+}
+#About-btn:hover{
+    width: 170px;
+}
+@media(max-width:765px){
+    .About{
+        padding: 0;
+    }
+
+}
+/* section About end */
+
+/* Footer Start */
+#Footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+}
+#Footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+
+}
+#Footer h1 span{
+color: #ffa500;
+}
+
+.social-link svg{
+    width: 30px;
+    height: 30px;
+
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 60px;
+    /* background: black; */
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+
+}
+.social-link svg:hover{
+    background: #ffa500;
+}
+/* Footer end */
